@@ -282,3 +282,23 @@ input {
   left: 770px; /* Ajusta la posición desde la derecha */
   overflow: hidden;
 }
+
+.flecha {
+    font-size: 55px; /* Ajusta el tamaño según tus preferencias */
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Ajusta la distancia desde la derecha según tus preferencias */
+    transform: translateY(-50%);
+}
+.error-message {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff6961; /* Cambia el color de fondo según tus preferencias */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    z-index: 1000; /* Ajusta el índice z según sea necesario */
+}

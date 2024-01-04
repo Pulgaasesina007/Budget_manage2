@@ -1,4 +1,3 @@
-
 {% extends 'Layaout/Base.html' %}
 {% load static %}
 {% block content %}
@@ -10,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Zen+Dots&display=swap" rel="stylesheet" />
     <link rel="stylesheet"  href="{% static 'css/Agg_ingreso.css' %}" />
     <title>Ingresos</title>
-    
+
 </head>
 
 <body>
@@ -25,7 +24,7 @@
                         <option value="{{ opcion.id }}">{{ opcion.nombre }}</option>
                         {% endfor %}
                     </select>
-
+                    {{ form.tipoIngreso.errors }}  <!-- Agregado para mostrar errores -->
 
             </div>
 
@@ -34,10 +33,11 @@
             <input type="text" id="descripcion" name="descripcion" placeholder="Descripción"/>
           </div>
           <div class="linea-input1"></div>
-          
+
           <div class="valor-dinero">
             <label for="valorDinero" class="texto-valor-dinero"></label>
             <input type="number" id="valorDinero" name="valor" onclick="borrarTextoValor()" placeholder="$0,00" />
+
             <div class="linea-valor-dinero"></div>
           </div>
 
@@ -45,12 +45,11 @@
               <label for="fechaDesde" class="textoFecha">
                 <input type="date" id="fechaDesde" style="width: 200px; height: 45px; " name="fecha_registro"  required />
               </label>
-              
-              
-                                                      
+              {{ form.fecha_registro.errors }}
+
       </div>
       <div class="botonAzul">
-            
+
       </div>
       <b>
         <i>
@@ -58,7 +57,7 @@
               <span class="textoBotonagregar">Agregar ingresos <span class="iconomas"></span></span>
 
           </button>
-          
+
         </i>
       </b>
       <div class="botonverde">
@@ -71,18 +70,16 @@
       <div>
 
       </div>
-      
+
           <t1>Agregar Ingresos</t1>
 
-      
-      
 
-  
+
+
+
 
 
   </form>
-
-        
 
 </body>
 

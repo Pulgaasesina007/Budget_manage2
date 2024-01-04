@@ -19,6 +19,7 @@ def Index(request):
 # Create your views here.
 
 def Usuario_r(request):
+    mensaje_error = ''
     if request.method == 'POST':
         print("POST a")
         form = Register_User(request.POST)
@@ -37,9 +38,10 @@ def Usuario_r(request):
         else:
             print(form.errors)
             print("error form no valido ")
+            mensaje_error = "Error en algun campo de registro"
     else:
         form = Register_User()  # Mover la inicialización del formulario fuera del bloque 'if'
-    return render(request, 'Usuario/usuario_r.html', {'form': form})
+    return render(request, 'Usuario/usuario_r.html', {'form': form,'mensaje_error':mensaje_error})
 def Gastos_Ingreso_modulo(request):
     return render(request,'Gastos_Ingresos_modulo.html')
 
@@ -81,6 +83,8 @@ def login_usuario(request):
         else:
             print("Formulario no válido")
             print(form.errors)
+            # Añadir el mensaje de error del formulario al mensaje general
+            mensaje_error = "Credenciales invalidas"
 
     else:
         print("Petición GET recibida")
@@ -145,35 +149,9 @@ def act_password(request):
     return render(request, './Usuario/cambiar_contraseña.html', {'form': form, 'perfil': perfil})
 
 
-def agregar_ingreso(request):
-   # opciones = Tipo_Ingreso.objects.all(Gastos, )
-    ingreso_individual = Ingresos.objects.all()
-    sumatoria_ingresos = 0
-    for i in ingreso_individual:
-        sumatoria_ingresos += i.valor
-        print(f"{i.descripcion} --- Valor: ${i.valor}")
-
-    print(sumatoria_ingresos)
-    return render(request, 'Ingresos/add_ingreso.html', {
-      #  '#opciones': opciones,
-        'suma_ingresos': sumatoria_ingresos
-    })
 
 
-def registrar_ingreso(request):
-    descripcion = request.POST['descripcion']
-    tipo_ingreso = request.POST['categoria']
-    valorDinero = request.POST['valorDinero']
-    fecha = request.POST['fechaDesde']
-    usuario = get_object_or_404(user_perfil, username=request.user.username)
-    print(descripcion)
-    print(tipo_ingreso)
-    print(valorDinero)
-    print(fecha)
-    print(type(usuario.id))
-    Ingresos.objects.create(descripcion=descripcion, fecha_registro=fecha, valor=valorDinero,
-                            tipoIngreso_id=tipo_ingreso, Usuario_id=usuario.id)
-    return redirect('/Home/Perfil_usuario')
+
 
 
 
@@ -218,9 +196,6 @@ def registrar_ingreso(request):
             ingreso.save()
 
             return redirect('/Home/')
-        else:
-            print(form.errors)
-            print(request.POST)
     else:
         form = IngresosForm()
 
@@ -229,9 +204,7 @@ def registrar_ingreso(request):
 
     return render(request, 'Ingresos/add_ingreso.html',
                   {'form': form, 'total_ingreso': total_ingreso, 'opciones_tipo_ingreso': opciones_tipo_ingreso})
-def lista_gastos(request):
-    gastos = Gastos.objects.all()
-    return render(request, 'lista_gastos.html', {'gastos': gastos})
+
 #_________________________________
 
 

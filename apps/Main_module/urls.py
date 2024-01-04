@@ -15,14 +15,14 @@ urlpatterns = [
     path('',views.login_usuario, name = 'login_usuario'),
 
     #Ingreso gastos modulo
-    path('agregar_ingreso/', views.registrar_ingreso, name= 'reg_ingreso'),
+    path('agregar_ingreso/', login_required(views.registrar_ingreso), name= 'reg_ingreso'),
 
    # path('agregar_gasto/', views.agregar_gasto,name='agg_gasto'),
     path('agregar_gasto/', login_required(views.registrar_gasto),name='reg_gastos'),
     path('Balance/',login_required(views.grafico), name='Balance'),
     path('Historial/',views.historial,name='Historial'),
     path('Busqueda_gastos_ingresos/',login_required(views.obtener_balance),name='Busqueda_gastos_ingresos'),
-    path('ListaGastosIngresos/',views.lista_gastos,name='listaGastosIngresos'),
+
     path('predicion/',views.modelo_prediccion, name='modelo_prediccion')
 
 ]
