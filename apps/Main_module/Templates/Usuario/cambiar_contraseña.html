@@ -1,0 +1,57 @@
+{% extends 'Layaout/Base.html' %}
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Zen+Dots&display=swap" rel="stylesheet" />
+    <link href="{% static 'css/cambiar_contra.css' %}" rel="stylesheet" />
+
+    <title>Cambiar Contraseña</title>
+</head>
+
+<body>
+    <form action="{% url 'act_password' %}" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <div class="actual">
+                <label for="act">Actual:</label>
+                <input type="text" id="act" style="width: 370%;" name="act" value="*******" disabled/>
+            </div>
+
+            <label for="" class="nuevacontraseña">Nueva contraseña:
+                <input type="text" id="nwcontra"  name="password1" required />
+            </label>
+
+            <label for="" class="confirmarcontraseña">Confirmar contraseña:
+                <input type="text" id="confcontra"  name="password2" required />
+            </label>
+        </div>
+
+        <div class="botonverde">
+            <button type="submit" class="guardarcambios">Guardar cambios</button>
+        </div>
+    </form>
+
+    <a href="{% url 'usuario_act_dat' %}" class="actualizar">Actualizar datos</a>
+    <a href="{% url 'Perfil_usuario' %}" class="cambiarcontraseña">Perfil usuario</a>
+    <a href="{% url 'logout' %}" class="cerrarsesión">Cerrar sesión</a>
+
+    <span class="imgcorchete"></span>
+    <div class="reglascontraseña">
+        <p><span class="puntoverde"></span>Como mínimo 10 caracteres.</p>
+        <p><span class="puntoverde"></span>Contenga letras mayúsculas y minúsculas.</p>
+        <p><span class="puntoverde"></span>Contenga número.</p>
+        <p><span class="puntoverde"></span>Deben coincidir las dos contraseñas.</p>
+    </div>
+
+</body>
+
+</html>
+{% endblock %}

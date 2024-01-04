@@ -1,0 +1,83 @@
+/* static/css/predict.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+select {
+    padding: 5px;
+}
+
+/* predict.css */
+
+.textoDesde input,
+.textoHasta input {
+    background-color: lightblue; /* Fondo celeste para el input */
+    color: black; /* Color de texto negro para el input */
+    padding: 10px; /* Ajusta el relleno según sea necesario */
+    margin: 5px; /* Ajusta el margen según sea necesario */
+    border: 2px solid #000000; /* Agrega un borde para resaltar el input */
+
+}
+
+/* Otros estilos si es necesario */
+
+button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Añade estilos para la imagen */
+img {
+    max-width: 100%;
+    height: auto;
+    z-index: 2; /* Asegura que la imagen esté sobre el grid */
+    position: relative; /* Ajusta la posición de la imagen */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px; /* Agrega espacio entre la imagen y la tabla */
+}
+
+.grid-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: white; /* Fondo blanco para los elementos de la tabla */
+    color: black; /* Color de texto negro */
+    border-radius: 5px;
+}
+
+.grid-item:nth-child(even) {
+    background-color: #f2f2f2; /* Fondo gris claro para las filas pares */
+}
+
+.grid-item:nth-child(odd) {
+    background-color: #ffffff; /* Fondo blanco para las filas impares */
+}

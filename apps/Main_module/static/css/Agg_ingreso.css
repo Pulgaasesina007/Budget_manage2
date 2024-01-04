@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  label {
+    margin-bottom: 5px;
+    width: 200px;
+  }
+
+  input {
+    padding: 8px;
+
+    border: 1px solid #fbf9f9;
+    border-radius: 5px;
+    background-color: rgba(195, 207, 237, 1);
+  }
+
+  .descripcion {
+    position: absolute;
+    top: 330px; /* Ajusta la posición según tus necesidades */
+    left: 520px; /* Ajusta la posición según tus necesidades */
+  }
+
+  .textodescripcion {
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 25px;
+    color: rgb(98, 90, 90);
+    position: absolute;
+    pointer-events: none; /* Evita que el label interfiera con la interacción del input */
+  }
+
+  .descripcion input {
+    padding: 8px;
+    border: none; /* Sin borde para el input */
+    border-radius: 0; /* Sin bordes redondeados */
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgb(248, 249, 251);
+    margin-top: 5px; /* Ajusta el espacio entre el label y el input según tus necesidades */
+  }
+
+  /* Posiciona el label sobre el input */
+  .textodescripcion {
+    top: 5px;
+    left: 40px;
+  }
+
+  /* Estilos adicionales para el efecto deseado */
+  .descripcion input:focus + .textodescripcion {
+    display: none; /* Oculta el label cuando el input está enfocado */
+  }
+
+  .linea-input1 {
+    width: 800px; /* Ajusta el ancho de la línea según tus necesidades */
+    border-bottom: 1px solid rgb(98, 90, 90); /* Línea de borde inferior */
+    position: absolute;
+    top: 380px; /* Ajusta la posición según tus necesidades */
+    left: 260px; /* Ajusta la posición según tus necesidades */
+  }
+
+  .valor-dinero {
+    position: absolute;
+    top: 390px; /* Ajusta la posición según tus necesidades */
+    left: 520px; /* Ajusta la posición según tus necesidades */
+  }
+
+  .valor-dinero input {
+    padding: 12px;
+    border: none;
+    border-radius: 0;
+    font-family: 'Work Sans';
+    font-weight: Regular;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 1);
+    background-color: #ffffff;
+    margin-top: 5px;
+  }
+
+  .texto-valor-dinero {
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 25px;
+    color: rgb(98, 90, 90);
+    position: absolute ;
+    top: 10px; /* Ajusta la posición según tus necesidades */
+    left: 90px;
+    pointer-events: none; /* Evita que el label interfiera con la interacción del input */
+  }
+
+
+  .linea-input2 {
+    width: 800px; /* Ajusta el ancho de la línea según tus necesidades */
+    border-bottom: 1px solid rgb(98, 90, 90); /* Línea de borde inferior */
+    position: absolute;
+    top: 440px; /* Ajusta la posición según tus necesidades */
+    left: 260px; /* Ajusta la posición según tus necesidades */
+  }
+
+
+
+
+
+
+  .inicio {
+    width: 84px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 70px;
+    left: 33px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+
+  }
+  .enlaceAgregaringresos {
+    width: 184px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 70px;
+    left: 390px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+
+  }
+  .separador1 {
+    color: #000;
+    font-size: 20px; /* Ajusta el tamaño del texto según tus necesidades */
+    margin: 0 95px; /* Ajusta el espaciado entre el símbolo y los enlaces según tus necesidades */
+    position: absolute; /* Asegura que el elemento se posicione de manera absoluta */
+    top: 70px; /* Ajusta la posición desde la parte superior según tus necesidades */
+  }
+
+  .separador2 {
+    color: #000;
+    font-size: 20px; /* Ajusta el tamaño del texto según tus necesidades */
+    margin: 0 375px; /* Ajusta el espaciado entre el símbolo y los enlaces según tus necesidades */
+    position: absolute; /* Asegura que el elemento se posicione de manera absoluta */
+    top: 70px; /* Ajusta la posición desde la parte superior según tus necesidades */
+  }
+  .barraceleste {
+    width: 100%;
+    height: 50px;
+    background: rgba(112,156,224,1);
+    opacity: 1;
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .nomproyecto {
+    width: 194px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 10px;
+    left: 23px;
+    font-family: Zen Dots;
+    font-weight: Regular;
+    font-size: 26px;
+    opacity: 1;
+    text-align: left;
+  }
+  .iconoSalir {
+    width: 30px; /* Ajusta el ancho según tus necesidades */
+    height: 30px; /* Ajusta la altura según tus necesidades */
+    background: url("../images/salir.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Utiliza "contain" para asegurar que la imagen se ajuste dentro del contenedor */
+    opacity: 1;
+    position: absolute;
+    top: 70px; /* Ajusta la posición desde la parte superior */
+    right: 5px; /* Ajusta la posición desde la derecha */
+    overflow: hidden;
+  }
+  .botonverde {
+    width: 75%;
+    height: 50px;
+    background: rgba(67,168,84,1);
+    opacity: 1;
+    position: absolute;
+    top: 570px;
+    left: 33px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: center center;
+    overflow: hidden;
+    left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Añadido para separar los elementos */
+    padding: 0 20px;
+  }
+  .texto-ingreso-mensual,
+    .monto-ingreso-mensual {
+      color: black;
+      font-family: 'Work Sans';
+      font-weight: Regular;
+      font-size: 20px;
+      display: inline-block;
+
+      margin: 0 0px; /* Ajusta el espacio entre el texto y el monto según tus necesidades */
+    }
+
+    .monto-ingreso-mensual {
+      float: right; /* Coloca el monto a la derecha */
+    }
+
+  .iconoCalendario1 {
+    width: 40px; /* Ajusta el ancho según tus necesidades */
+    height: 40px; /* Ajusta la altura según tus necesidades */
+    background: url("../images/calendario.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Utiliza "contain" para asegurar que la imagen se ajuste dentro del contenedor */
+    opacity: 1;
+    position: absolute;
+    top: 250px; /* Ajusta la posición desde la parte superior */
+    left: 960px; /* Ajusta la posición desde la derecha */
+    overflow: hidden;
+  }
+  .iconocasita {
+    width: 40px; /* Ajusta el ancho según tus necesidades */
+    height: 40px; /* Ajusta la altura según tus necesidades */
+    background: url("../images/casita.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Utiliza "contain" para asegurar que la imagen se ajuste dentro del contenedor */
+    opacity: 1;
+    position: absolute;
+    top: 250px; /* Ajusta la posición desde la parte superior */
+    left: 270px; /* Ajusta la posición desde la derecha */
+    overflow: hidden;
+  }
+  .iconomas {
+    width: 40px; /* Ajusta el ancho según tus necesidades */
+    height: 40px; /* Ajusta la altura según tus necesidades */
+    background: url("../images/mas.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Utiliza "contain" para asegurar que la imagen se ajuste dentro del contenedor */
+    opacity: 1;
+    position: absolute;
+
+    left: 230px; /* Ajusta la posición desde la derecha */
+    overflow: hidden;
+  }
+
+  .registroIngresosygastos {
+    width: 303px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 70px;
+    left: 110px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  .botonAzul {
+    width: 346px;
+    height: 70px;
+    background: rgba(91,105,226,1);
+    opacity: 1;
+    position: absolute;
+    top: 460px;
+    left: 500px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+
+  }
+  .textoBotonagregar {
+    width: 319px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 470px;
+    left: 550px;
+    font-family: Work Sans;
+    font-weight: SemiBold Italic;
+    font-size: 25px;
+    opacity: 1;
+    text-align: left;
+    cursor: pointer;
+  }
+
+
+
+  .textoFecha {
+    width: 400px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 250px;
+    left: 750px;
+    font-family: 'Work Sans';
+    font-weight: Regular;
+    font-size: 25px; /* Ajusta el tamaño del texto según tus necesidades */
+    opacity: 1;
+    text-align: left;
+  }
+
+  .textoselect {
+    width: 236px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 250px;
+    left: 315px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .textoAgregaringresos {
+    width: 350px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 110px;
+    left: 25px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+  }
+  .categoria-btn
+  {
+    width: 75px;
+    height: 30px;
+    background: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Work Sans';
+    font-weight: Regular;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 70px;
+    right: 185px;
+  }
+  .listas-ingresos-btn {
+    width: 135px;
+    height: 30px;
+    background: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Work Sans';
+    font-weight: Regular;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 70px;
+    right: 35px;
+  }

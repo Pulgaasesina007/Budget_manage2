@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+
+  <link rel="stylesheet" href="{% static 'css/Login_usuario.css' %}">
+</head>
+
+<body>
+
+  <section class="form-register">
+
+    <div class="form-left">
+      <img src="{% static 'images/login_image.jpg' %}" alt="Imagen de inicio de sesión">
+    </div>
+
+    <div class="form-right">
+
+      <h4>Inicio de sesión</h4>
+
+      {% if mensaje_error %}
+        <p>{{ mensaje_error }}</p>
+      {% endif %}
+
+      <form  method="post" action="{% url 'login_usuario' %}"  >
+
+        {% csrf_token %}
+          <input type="text" name="username" class="input" placeholder="ingrese su usuario" autocomplete="off" required>
+          <input type="password" name="password" class="input" placeholder="ingrese su contraseña" autocomplete="off" required>
+
+
+        <input type="hidden" value="{{ next }}" name="next">
+
+        <button type="submit" class="botons">Iniciar Sesión</button>
+
+        <p>
+          <a href="{%url 'Usuario_r'  %}">¿No tienes cuenta?</a>
+        </p>
+
+      </form>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>

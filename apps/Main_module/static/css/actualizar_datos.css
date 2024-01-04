@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+  
+  .nombres {
+    width: 154px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 110px;
+    left: 360px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  
+  .apellidos {
+    width: 154px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 110px;
+    left: 800px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  .cedula {
+    width: 109px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 180px;
+    left: 360px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  .fechanac  {
+    width: 336px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 250px;
+    left: 360px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  
+  .correo {
+    width: 114px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 320px;
+    left: 360px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  
+  .telefono {
+    width: 143px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 390px;
+    left: 360px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  
+  
+  .botonverde {
+    width: 98%;
+    height: 50px;
+    background: rgba(67,168,84,1);
+    opacity: 1;
+    position: absolute;
+    top: 580px;
+    left: 33px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: center center;
+    overflow: hidden;
+    left: 14px;
+  }
+  .botonverde button {
+    width: 95%;
+    height: 95%;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  }
+    
+  .barraceleste {
+    width: 100%;
+    height: 50px;
+    background: rgba(112,156,224,1);
+    opacity: 1;
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    overflow: hidden;
+  }
+  
+  .nomproyecto {
+    width: 194px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 10px;
+    left: 23px;
+    font-family: Zen Dots;
+    font-weight: Regular;
+    font-size: 26px;
+    opacity: 1;
+    text-align: left;
+  }
+  .inicio {
+    width: 84px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 70px;
+    left: 33px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+  }
+  .separador2 {
+    color: #000;
+    font-size: 20px; /* Ajusta el tamaño del texto según tus necesidades */
+    margin: 0 165px; /* Ajusta el espaciado entre el símbolo y los enlaces según tus necesidades */
+    position: absolute; /* Asegura que el elemento se posicione de manera absoluta */
+    top: 70px; /* Ajusta la posición desde la parte superior según tus necesidades */
+  }
+  .actualizardatos {
+    width: 303px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 70px;
+    left: 180px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  .enlaceperfil{
+    width: 303px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 70px;
+    left: 110px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  .separador1 {
+    color: #000;
+    font-size: 20px; /* Ajusta el tamaño del texto según tus necesidades */
+    margin: 0 90px; /* Ajusta el espaciado entre el símbolo y los enlaces según tus necesidades */
+    position: absolute; /* Asegura que el elemento se posicione de manera absoluta */
+    top: 70px; /* Ajusta la posición desde la parte superior según tus necesidades */
+  }
+  .perfil {
+    width: 303px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 70px;
+    left: 330px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+  }
+  
+  .iconoSalir {
+    width: 30px; /* Ajusta el ancho según tus necesidades */
+    height: 30px; /* Ajusta la altura según tus necesidades */
+    background: url("../images/salir.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Utiliza "contain" para asegurar que la imagen se ajuste dentro del contenedor */
+    opacity: 1;
+    position: absolute;
+    top: 70px; /* Ajusta la posición desde la parte superior */
+    right: 5px; /* Ajusta la posición desde la derecha */
+    overflow: hidden;
+  }
+  .iconoCalendario {
+    width: 30px; /* Ajusta el ancho según tus necesidades */
+    height: 30px; /* Ajusta la altura según tus necesidades */
+    background: url("../images/calendario.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Utiliza "contain" para asegurar que la imagen se ajuste dentro del contenedor */
+    opacity: 1;
+    position: absolute;
+    top: 275px; 
+    left: 770px; 
+    overflow: hidden;
+  }
+  .perfil {
+    width: 87px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 135px;
+    left: 40px;
+    font-family: Work Sans;
+    font-weight: Bold Italic;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+  }
+  .actualizar {
+    width: 265px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 185px;
+    left: 40px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+  }
+  .cambiarcontraseña {
+    width: 390px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 235px;
+    left: 40px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+  }
+  .cerrarsesión {
+    width: 208px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 285px;
+    left: 40px;
+    font-family: Work Sans;
+    font-weight: Regular;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+  }
+ 
+  .actualizar,
+  .cambiarcontraseña,
+  .cerrarsesión {
+    
+    width: 240px;
+    background-color: #b0a4de; /* Cambia "tuColorDeFondo" al color que desees */
+    padding: 11px; /* Ajusta el espaciado interno según tus necesidades */
+  }
+  
+  .actualizar:hover,
+  .cambiarcontraseña:hover,
+  .cerrarsesión:hover {
+    background-color: blue; /* Cambia "yourHoverColor" al color que desees */
+    color: ; /* Cambia al color de texto deseado cuando el fondo cambia */
+  }
+  .actualizardatos:active,
+  .cambiarcontraseña:active,
+  .cerrarsesión:active {
+    background-color: blue; /* Cambia "yourActiveColor" al color que desees */
+    color:  /* Cambia al color de texto deseado cuando el fondo cambia */
+  }
+
+  /* Para modo cerrar sesion */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(71, 68, 68, 0.5); /* Fondo gris traslúcido */
+}
+
+.modal-content {
+  background-color: #77717167;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+}
+
+.close {
+  color: #6e6868;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+  

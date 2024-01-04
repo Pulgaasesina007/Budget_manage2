@@ -1,0 +1,53 @@
+{% extends 'Layaout/Base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Zen+Dots&display=swap" rel="stylesheet" />
+    <link href="{% static 'css/Balance_styles.css' %}" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+  <div class="form-group">
+    <div class="textoCategoria">
+        Categoría:
+        <label for="categoria">
+            <select id="categoria" name="categoria" style="width: 230px; height: 45px; font-size: 20px;">
+                <option>Seleccione</option>
+                <option value="gastos">Gastos</option>
+                <option value="ingresos">Ingresos</option>
+            </select>
+        </label>
+    </div>
+
+    <label for="fechaDesde" class="textoDesde">Desde:
+        <input type="date" id="fechaDesde" style="width: 200px; " name="fechaDesde"  />
+    </label>
+
+    <label for="fechaHasta" class="textoHasta">Hasta :
+        <input type="date" id="fechaHasta" style="width: 200px; " name="fechaHasta"  />
+    </label>
+  </div>
+
+  <button type="button" id="obtenerBalanceBtn" class="botonAzul" onclick="obtenerBalance() ">
+      Obtener Historial
+  </button>
+  <div id="resultados"  >
+      <!-- Aquí se mostrará la respuesta del servidor -->
+  </div>
+
+
+  <div class="botonverde"></div>
+  <div class="iconoCalendario1"></div>
+  <div class="iconoCalendario2"></div>
+
+  <script src="{% static 'JS/category_quest.js' %}"></script>
+
+</body>
+
+</html>
+{% endblock %}

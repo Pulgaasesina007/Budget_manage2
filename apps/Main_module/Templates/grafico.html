@@ -1,0 +1,39 @@
+{% extends 'Layaout/Base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="{% static 'css/grafico.css' %}">
+</head>
+<body>
+    <h1>Resumen Financiero</h1>
+
+    {% if grafica_gastos_base64 and grafica_ingresos_base64 and grafica_total_base64 %}
+        <div class="graph-container">
+            <div class="graph">
+                <h2>Gastos por Categoría</h2>
+                <img src="data:image/png;base64,{{ grafica_gastos_base64 }}" alt="Gráfico de Pastel para Gastos por Categoría">
+            </div>
+
+            <div class="graph">
+                <h2>Ingresos por Categoría</h2>
+                <img src="data:image/png;base64,{{ grafica_ingresos_base64 }}" alt="Gráfico de Pastel para Ingresos por Categoría">
+            </div>
+
+            <div class="graph">
+                <h2>Total de Gastos e Ingresos</h2>
+                <img src="data:image/png;base64,{{ grafica_total_base64 }}" alt="Gráfico de Pastel para Total de Gastos e Ingresos">
+            </div>
+        </div>
+
+        <h2>Saldo actual: {{ total_resultado }}</h2>
+    {% else %}
+        <p>{{ mensaje }}</p>
+    {% endif %}
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,90 @@
+
+{% extends 'Layaout/Base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Zen+Dots&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"  href="{% static 'css/Agg_ingreso.css' %}" />
+    <title>Ingresos</title>
+    
+</head>
+
+<body>
+
+  <form action="{% url 'reg_ingreso' %}" method="POST">
+      {% csrf_token %}
+      <div class="form-group">
+            <div class="textoselect"  >
+                <label for="{{ form.tipoIngreso.id_for_label }}" style="font-size: x-large">Tipo de ingreso:</label>
+                    <select id="{{ form.tipoIngreso.id_for_label }}" name="tipoIngreso" style="width: 230px; height: 45px; font-size: 20px;">
+                        {% for opcion in opciones_tipo_ingreso %}
+                        <option value="{{ opcion.id }}">{{ opcion.nombre }}</option>
+                        {% endfor %}
+                    </select>
+
+
+            </div>
+
+          <div class="descripcion">
+            <label for="descripcion" class="textodescripcion"></label>
+            <input type="text" id="descripcion" name="descripcion" placeholder="Descripción"/>
+          </div>
+          <div class="linea-input1"></div>
+          
+          <div class="valor-dinero">
+            <label for="valorDinero" class="texto-valor-dinero"></label>
+            <input type="number" id="valorDinero" name="valor" onclick="borrarTextoValor()" placeholder="$0,00" />
+            <div class="linea-valor-dinero"></div>
+          </div>
+
+          <div class="linea-input2"></div>
+              <label for="fechaDesde" class="textoFecha">
+                <input type="date" id="fechaDesde" style="width: 200px; height: 45px; " name="fecha_registro"  required />
+              </label>
+              
+              
+                                                      
+      </div>
+      <div class="botonAzul">
+            
+      </div>
+      <b>
+        <i>
+          <button class="botonIngresos">
+              <span class="textoBotonagregar">Agregar ingresos <span class="iconomas"></span></span>
+
+          </button>
+          
+        </i>
+      </b>
+      <div class="botonverde">
+        <span class="texto-ingreso-mensual">Total de ingreso mensual</span>
+        <span class="monto-ingreso-mensual">${{ total_ingreso }}</span>
+      </div>
+      <div class="iconoCalendario1"></div>
+      <div class="iconocasita"></div>
+
+      <div>
+
+      </div>
+      
+          <t1>Agregar Ingresos</t1>
+
+      
+      
+
+  
+
+
+  </form>
+
+        
+
+</body>
+
+</html>
+{% endblock %}

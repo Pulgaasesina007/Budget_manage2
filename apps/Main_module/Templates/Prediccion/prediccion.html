@@ -1,0 +1,91 @@
+
+{% extends 'Layaout/Base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gráfico de Predicción</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/predict.css' %}">
+</head>
+<body>
+    <label for="empresa">Selecciona una empresa:</label>
+    <form method="post" action="{% url 'modelo_prediccion' %}">
+        {% csrf_token %}
+         <select id="empresa" name="empresa">
+            <optgroup label="Tecnología">
+                <option value="AAPL">Apple Inc. (AAPL)</option>
+                <option value="MSFT">Microsoft Corporation (MSFT)</option>
+                <option value="GOOGL">Alphabet Inc. (GOOGL)</option>
+            </optgroup>
+            <optgroup label="Energía">
+                <option value="XOM">Exxon Mobil Corporation (XOM)</option>
+                <option value="CVX">Chevron Corporation (CVX)</option>
+            </optgroup>
+            <optgroup label="Salud">
+                <option value="JNJ">Johnson & Johnson (JNJ)</option>
+                <option value="PFE">Pfizer Inc. (PFE)</option>
+                <option value="MRNA">Moderna, Inc. (MRNA)</option>
+            </optgroup>
+            <optgroup label="Finanzas">
+                <option value="JPM">JPMorgan Chase & Co. (JPM)</option>
+                <option value="BAC">Bank of America Corporation (BAC)</option>
+            </optgroup>
+            <optgroup label="Consumo Discrecional">
+                <option value="AMZN">Amazon.com, Inc. (AMZN)</option>
+                <option value="TSLA">Tesla, Inc. (TSLA)</option>
+                <option value="DIS">The Walt Disney Company (DIS)</option>
+            </optgroup>
+            <optgroup label="Consumo Básico">
+                <option value="KO">The Coca-Cola Company (KO)</option>
+                <option value="PG">Procter & Gamble Co. (PG)</option>
+            </optgroup>
+            <optgroup label="Industriales">
+                <option value="BA">Boeing Co. (BA)</option>
+                <option value="GE">General Electric Company (GE)</option>
+            </optgroup>
+            <optgroup label="Materiales">
+                <option value="DOW">The Dow Chemical Company (DOW)</option>
+                <option value="NEM">Newmont Corporation (NEM)</option>
+            </optgroup>
+            <optgroup label="Comunicaciones">
+                <option value="T">AT&T Inc. (T)</option>
+                <option value="VZ">Verizon Communications Inc. (VZ)</option>
+            </optgroup>
+             <optgroup label="Criptomonedas">
+                <option value="BTC-USD">Bitcoin. (BTC-USD)</option>
+
+            </optgroup>
+        </select>
+         <label for="fechaDesde" class="textoDesde">Desde:
+        <input type="date" id="fechaDesde" style="width: 200px; " name="fechaDesde" required />
+    </label>
+
+    <label for="fechaHasta" class="textoHasta">Hasta:
+        <input type="date" id="fechaHasta" style="width: 200px; " name="fechaHasta" required />
+    </label>
+        <button type="submit">Generar Predicción</button>
+    </form>
+   {% if mensaje_error %}
+        <p class="error">{{ mensaje_error }}</p>
+    {% else %}
+        {% if image_base64 %}
+            <img src="data:image/png;base64,{{ image_base64 }}" alt="Gráfico de predicción">
+        {% endif %}
+
+        {% if resultados_prediccion %}
+            <div class="grid-container">
+                <div class="grid-item"><strong>Día</strong></div>
+                <div class="grid-item"><strong>Precio Predicho</strong></div>
+                {% for fecha, precio in resultados_prediccion %}
+                    <div class="grid-item">{{ fecha|date:'D, d M Y' }}</div>
+                    <div class="grid-item">{{ precio }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endif %}
+
+</body>
+</html>
+{% endblock %}

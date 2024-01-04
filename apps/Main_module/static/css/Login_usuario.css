@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.form-register {
+  display: flex;
+  width: 400px;
+  background: #FFFFFF;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: #3D6697;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-left {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.form-left img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.form-right {
+  flex: 2;
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: #1f53c5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.form-register a:hover {
+  color: #24303c;
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+/* Additional styles for black-link */
+.black-link {
+  color: black;
+  text-decoration: none;
+}
+
+.black-link:hover {
+  text-decoration: underline;
+}

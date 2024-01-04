@@ -1,0 +1,55 @@
+{% extends 'Layaout/Base.html' %}
+{% load static %}
+
+{% block content %}
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Zen+Dots&display=swap" rel="stylesheet" />
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="{% static 'css/inicio.css' %}">
+
+  <title>Inicio</title>
+
+</head>
+<body>  
+      
+        <div class="cuadroRegisInGas"></div>
+      </div>
+    </div>
+    <div class="name"></div>
+
+
+    <div class="cuadroBalanceInGas"></div>
+    <span class="textoRegisInGas">
+        <a href="{% url 'Ingreso_modulo' %}">
+        Registro de ingresos y gastos
+        </a>
+    </span>
+    <div class="iconoRegis1"></div>
+    <div class="iconoRegis2"></div>
+        <a href="{% url 'Balance' %}">
+    <span class="textoBalance">Balance de ingresos y gastos</span>
+            </a>
+    <div class="iconoBalance"></div>
+        <a href="{% url 'Perfil_usuario' %}">
+    <div class="cuadroPerfil"></div>
+    <span class="textoPerfil">Perfil</span>
+            </a>
+    <div class="cuadroPrediccion"></div>
+    <span class="textoPrediccion">Predicción de precios</span>
+    <div class="iconoPrediccion"></div>
+    <span class="textoBienvenido">Bienvenido!</span>
+    <div class="iconoPerfil"></div>
+
+
+
+
+  </div>
+
+
+</body>
+</html>
+{% endblock %}

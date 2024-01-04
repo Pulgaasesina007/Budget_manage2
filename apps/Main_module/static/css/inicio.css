@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+
+.barraceleste {
+  width: 100%;
+  height: 50px;
+  background: rgba(112,156,224,1);
+  opacity: 1;
+  position: absolute;
+
+  overflow: hidden;
+}
+
+
+
+.cuadroBalanceInGas {
+  width: 250px;
+  height: 250px;
+  background: rgba(255,252,252,1);
+  opacity: 1;
+  position: absolute;
+  top: 90px;
+  left: 846px;
+  border: 4px solid rgba(49,74,206,1);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+}
+.cuadroRegisInGas {
+  width: 250px;
+  height: 250px;
+  background: rgba(255,252,252,1);
+  opacity: 1;
+  position: absolute;
+  top: 90px;
+  left: 320px;
+  border: 4px solid rgba(49,74,206,1);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+}
+.textoRegisInGas {
+  width: 250px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 210px;
+  left: 320px;
+  font-family: Work Sans;
+  font-weight: ExtraBold;
+  font-size: 30px;
+  opacity: 1;
+  text-align: center;
+
+}
+.textoRegisInGas a{
+  text-decoration: none;
+}
+.iconoRegis1 {
+  width: 70px;
+  height: 90px;
+  background: url("../images/v602_4.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 110px;
+  left: 360px;
+  overflow: hidden;
+}
+.iconoRegis2 {
+  width: 80px;
+  height: 100px;
+  background: url("../images/v602_6.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 110px;
+  left: 460px;
+  overflow: hidden;
+}
+
+.textoBalance {
+  width: 250px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 210px;
+  left: 845px;
+  font-family: Work Sans;
+  font-weight: ExtraBold;
+  font-size: 30px;
+  opacity: 1;
+  text-align: center;
+}
+.iconoBalance {
+  width: 110px;
+  height: 110px;
+  background: url("../images/v602_11.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 100px;
+  left: 910px;
+  overflow: hidden;
+}
+
+.textoPerfil {
+  width: 250px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 550px;
+  left: 320px;
+  font-family: Work Sans;
+  font-weight: ExtraBold;
+  font-size: 30px;
+  opacity: 1;
+  text-align: center;
+}
+
+.textoPrediccion {
+  width: 190px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 530px;
+  left: 880px;
+  font-family: Work Sans;
+  font-weight: ExtraBold;
+  font-size: 30px;
+  opacity: 1;
+  text-align: center;
+}
+a{
+
+    text-decoration: none;
+  color: inherit;
+
+
+}
+
+.cuadroPerfil {
+  width: 250px;
+  height: 250px;
+  background: rgba(255,252,252,1);
+  opacity: 1;
+  position: absolute;
+  top: 370px;
+  left: 320px;
+  border: 4px solid rgba(49,74,206,1);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+}
+.iconoPrediccion {
+  width: 140px;
+  height: 140px;
+  background: url("../images/v602_15.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 380px;
+  left: 900px;
+  overflow: hidden;
+}
+.textoBienvenido {
+  width: 134px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 110px;
+  left: 22px;
+  font-family: Work Sans;
+  font-weight: SemiBold Italic;
+  opacity: 1;
+  text-align: left;
+}
+.cuadroPrediccion {
+  width: 250px;
+  height: 250px;
+  background: rgba(255,252,252,1);
+  opacity: 1;
+  position: absolute;
+  top: 370px;
+  left: 846px;
+  border: 4px solid rgba(49,74,206,1);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+}
+.iconoPerfil {
+  width: 150px;
+  height: 150px;
+  background: url("../images/v604_20.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 390px;
+  left: 370px;
+  overflow: hidden;
+}

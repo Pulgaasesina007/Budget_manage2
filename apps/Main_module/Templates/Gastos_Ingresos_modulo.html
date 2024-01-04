@@ -1,0 +1,38 @@
+{% extends 'Layaout/Base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Zen+Dots&display=swap" rel="stylesheet" />
+  <link href="{% static 'css/Gastos_Ingresos_modulo.css' %}" rel="stylesheet" />
+  <title>Document</title>
+</head>
+<body>
+
+<a href="{% url 'reg_ingreso' %}">
+    <div class="cuadroAingresos"></div>
+    <span class="agregaringreso">  AGREGAR INGRESOS </span>
+
+    <div class="iconoAingresos"></div>
+</a>
+<a href="{% url 'Historial' %}">
+        <div class="cuadrohistorial"></div>
+    <span class="historial">HISTORIAL</span>
+        <div class="iconohistorial"></div>
+</a>
+<a href="{% url 'reg_gastos' %}">
+        <div class="cuadroAgastos"></div>
+    <span class="agregargastos">AGREGAR GASTOS</span>
+    <div class="iconocarrito"></div>
+
+
+
+</a>
+
+
+
+</body>
+</html>
+{% endblock %}

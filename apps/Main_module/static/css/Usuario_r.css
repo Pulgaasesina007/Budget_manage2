@@ -1,0 +1,284 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(195,207,237,1);
+
+}
+
+.name-input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.name-input-group label {
+  flex: 1;
+}
+
+
+.nombres {
+  width: 154px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 90px;
+  left: 360px;
+  font-family: Work Sans;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+
+.apellidos {
+  width: 154px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 90px;
+  left: 800px;
+  font-family: Work Sans;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.cedula {
+  width: 109px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 160px;
+  left: 360px;
+  font-family: Work Sans;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.fechanac  {
+  width: 336px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 230px;
+  left: 360px;
+  font-family: Work Sans;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+
+.correo {
+  width: 114px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 300px;
+  left: 360px;
+  font-family: Work Sans;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.nombreusuario {
+  width: 400px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 440px;
+  left: 360px;
+  font-family: Work Sans;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.telefono {
+  width: 143px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 370px;
+  left: 360px;
+  font-family: Work Sans;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.contraseña {
+  width: 400px;
+  color: rgba(0,0,0,1);
+  position:absolute;
+  top: 510px;
+  left: 360px;
+  font-family: Work Sans;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.confirmarcontra {
+  width: 400px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 510px;
+  left: 800px;
+  font-family: Work Sans;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+
+.botonverde {
+  width: 98%;
+  height: 50px;
+  background: rgba(67,168,84,1);
+  opacity: 1;
+  position: absolute;
+  top: 580px;
+  left: 33px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: center center;
+  overflow: hidden;
+  left: 14px;
+}
+.botonverde button {
+  width: 95%;
+  height: 95%;
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.barraceleste {
+  width: 100%;
+  height: 50px;
+  background: rgba(112,156,224,1);
+  opacity: 1;
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.nomproyecto {
+  width: 194px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 10px;
+  left: 23px;
+  font-family: Zen Dots;
+  font-weight: Regular;
+  font-size: 26px;
+  opacity: 1;
+  text-align: left;
+}
+.inicio {
+  width: 84px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 70px;
+  left: 33px;
+  font-family: Work Sans;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+  text-decoration: none;
+}
+
+.registrousuario {
+  width: 303px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 70px;
+  left: 110px;
+  font-family: Work Sans;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+  text-decoration: none;
+}
+.separador {
+  color: #000;
+  font-size: 20px; /* Ajusta el tamaño del texto según tus necesidades */
+  margin: 0 90px; /* Ajusta el espaciado entre el símbolo y los enlaces según tus necesidades */
+  position: absolute; /* Asegura que el elemento se posicione de manera absoluta */
+  top: 70px; /* Ajusta la posición desde la parte superior según tus necesidades */
+}
+
+
+.imagenusuario {
+  width: 300px;
+  height: 342px;
+  background: url("../images/v905_3.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size:auto;
+  opacity: 1;
+  position: absolute;
+  top: 230px;
+  left: 53px;
+  overflow: hidden;
+}
+
+.registronuevo {
+  width: 250px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 150px;
+  left: 27px;
+  font-family: Work Sans;
+  font-weight: SemiBold Italic;
+  font-size: 36px;
+  opacity: 1;
+  text-align: left;
+  font-weight: bold;
+}
+.iconoSalir {
+  width: 30px; /* Ajusta el ancho según tus necesidades */
+  height: 30px; /* Ajusta la altura según tus necesidades */
+  background: url("../images/salir.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* Utiliza "contain" para asegurar que la imagen se ajuste dentro del contenedor */
+  opacity: 1;
+  position: absolute;
+  top: 70px; /* Ajusta la posición desde la parte superior */
+  right: 5px; /* Ajusta la posición desde la derecha */
+  overflow: hidden;
+}
+.iconoCalendario {
+  width: 30px; /* Ajusta el ancho según tus necesidades */
+  height: 30px; /* Ajusta la altura según tus necesidades */
+  background: url("../images/calendario.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* Utiliza "contain" para asegurar que la imagen se ajuste dentro del contenedor */
+  opacity: 1;
+  position: absolute;
+  top: 255px; /* Ajusta la posición desde la parte superior */
+  left: 770px; /* Ajusta la posición desde la derecha */
+  overflow: hidden;
+}

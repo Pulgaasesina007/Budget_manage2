@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+label {
+  margin-bottom: 5px;
+  width: 200px;
+}
+
+input {
+  padding: 8px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(195, 207, 237, 1);
+}
+
+
+.enlacehistorial {
+  width: 84px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 70px;
+  left: 390px;
+  font-family: Work Sans;
+
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+  text-decoration: none;
+
+}
+
+.botonverde {
+  width: 98%;
+  height: 50px;
+  background: rgba(67,168,84,1);
+  opacity: 1;
+  position: absolute;
+  top: 580px;
+  left: 33px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  overflow: hidden;
+  left: 14px;
+}
+ .iconoCalendario1 {
+    width: 30px; /* Ajusta el ancho según tus necesidades */
+    height: 30px; /* Ajusta la altura según tus necesidades */
+    background: url("../images/calendario.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Utiliza "contain" para asegurar que la imagen se ajuste dentro del contenedor */
+    opacity: 1;
+    position: absolute;
+    top: 135px; /* Ajusta la posición desde la parte superior */
+    left: 885px; /* Ajusta la posición desde la derecha */
+    overflow: hidden;
+  }
+  .iconoCalendario2 {
+    width: 30px; /* Ajusta el ancho según tus necesidades */
+    height: 30px; /* Ajusta la altura según tus necesidades */
+    background: url("../images/calendario.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Utiliza "contain" para asegurar que la imagen se ajuste dentro del contenedor */
+    opacity: 1;
+    position: absolute;
+    top: 185px; /* Ajusta la posición desde la parte superior */
+    left: 885px; /* Ajusta la posición desde la derecha */
+    overflow: hidden;
+  }
+.registroIngresosygastos {
+  width: 303px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 70px;
+  left: 110px;
+  font-family: Work Sans;
+
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+  text-decoration: none;
+}
+
+.botonAzul {
+  width: 346px;
+  height: 70px;
+  background: rgba(91,105,226,1);
+  opacity: 1;
+  position: absolute;
+  top: 250px;
+  left: 555px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+}
+.textoConsulta {
+  width: 319px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 470px;
+  left: 608px;
+  font-family: Work Sans;
+
+  font-size: 30px;
+  opacity: 1;
+  text-align: left;
+}
+
+.textoDesde {
+    width: 400px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 135px;
+    left: 580px;
+    font-family: 'Work Sans';
+
+    font-size: 25px; /* Ajusta el tamaño del texto según tus necesidades */
+    opacity: 1;
+    text-align: left;
+  }
+
+  .textoHasta {
+    width: 400px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 180px;
+    left: 580px;
+
+
+    font-size: 25px; /* Ajusta el tamaño del texto según tus necesidades */
+    opacity: 1;
+    text-align: left;
+  }
+
+  .textoCategoria {
+    width: 236px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 96px;
+    left: 250px;
+    font-family: Work Sans;
+
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+  }
+
+.textoHistorial {
+  width: 131px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 110px;
+  left: 25px;
+  font-family: Work Sans;
+
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+
+#resultados {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    position: fixed;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 999;
+}
+
+.resultado-item {
+    border: 3px solid #ccc;
+    padding: 35px;
+    margin: 0;
+    transition: background-color 2s ease-out; /* Transición ease-out para el cambio de color de fondo en 0.3 segundos */
+}
+
+.resultado-item:hover {
+    background: rgb(52, 152, 219);
+    background: linear-gradient(16deg, rgba(52, 152, 219, 1) 30%, rgba(15, 82, 84, 1) 82%);
+}
+
+#total_suma {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%; /* o el ancho que desees */
+    background-color: #168316; /* verde */
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 999;
+}

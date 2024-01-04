@@ -1,0 +1,50 @@
+{% extends 'Layaout/Base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="es">
+
+<body>
+
+    <!-- Mueve la sección head dentro del bloque content -->
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Zen+Dots&display=swap" rel="stylesheet" />
+        <link href="{% static 'css/Historial_g_i.css' %}"  rel="stylesheet" />
+        <title>Historial_gastos_ingresos</title>
+    </head>
+
+    <div class="textoCategoria">Categoría:
+        <label for="categoria">
+            <select id="categoria" name="categoria" style="width: 230px; height: 45px; font-size: 20px;">
+                <option value="gastos">Gastos</option>
+                <option value="ingresos">Ingresos</option>
+            </select>
+        </label>
+    </div>
+
+    <label for="fechaDesde" class="textoDesde">Desde:
+        <input type="date" id="fechaDesde" style="width: 200px; " name="fechaDesde" required />
+    </label>
+
+    <label for="fechaHasta" class="textoHasta">Hasta:
+        <input type="date" id="fechaHasta" style="width: 200px; " name="fechaHasta" required />
+    </label>
+
+    <button type="button" id="obtenerBalanceBtn" class="botonAzul" onclick="obtenerBalance()">
+        Realizar consulta
+    </button>
+
+    <!-- Otras partes del contenido de la página -->
+
+    <div id="resultados">
+        <!-- Aquí se mostrará la respuesta del servidor -->
+    </div>
+<div id="total_suma">
+
+</div>
+    <script src="{% static 'JS/category_quest.js' %}"></script>
+</body>
+</html>
+{% endblock %}
+
